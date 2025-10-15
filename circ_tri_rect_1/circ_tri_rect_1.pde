@@ -26,8 +26,12 @@ void draw(){
     }
     
     
-    xCircle += sin(time + i * 0.3) * -20;
-    pCircle += 1;
+    float radius = i * 3;
+    xCircle = width/2 + radius * cos(time + i * 0.1);
+    yCircle = height/2 + radius * sin(time + i * 0.1);
+
+
+    pCircle += 3;
     
     // Automate circle colour
     yCircleFill += 3;
@@ -37,5 +41,5 @@ void draw(){
     fill(yCircleFill, xCircleFill, pCircleFill);
     circle(yCircle, xCircle, pCircle);
   }
-  time += 0.05;
+  time += 0.12;
 }
