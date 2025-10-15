@@ -25,7 +25,6 @@ void draw(){
       xCircle = 200;
     }
     
-    
     float radius = i * 3;
     xCircle = width/2 + radius * cos(time + i * 0.1);
     yCircle = height/2 + radius * sin(time + i * 0.1);
