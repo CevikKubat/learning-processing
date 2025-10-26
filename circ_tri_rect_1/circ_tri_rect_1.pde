@@ -40,10 +40,5 @@ void draw(){
     fill(yCircleFill, xCircleFill, pCircleFill);
     circle(yCircle, xCircle, pCircle);
   }
-  fill(0, 0, 0);
-  triangle(400 - 100, 400, 400 + 100, 400, 400, 200);
-  fill(0, 0, 0);
-  rectMode(CENTER);
-  rect(400, 600, 220, 220);
   time += 0.12;
 }
