@@ -54,7 +54,7 @@ void setup() {
 // ----------------------------------------------------
 void draw() {
   
-  background(60);
+  background(160);
   
   position++;
   if(position>=64) position = 0;
@@ -64,7 +64,7 @@ void draw() {
    
     if(i==position) {
       
-      stroke(255);
+      stroke(255, 120, 20);
       fill(255);
       rect(47+i*64 -2, 40-2, 26+4, 26+4, 6+2);
     }
@@ -91,7 +91,7 @@ void draw() {
     if(i==position) {
       
       stroke(255);
-      fill(255);
+      fill(120);
       rect(47+i*64 -2, 80-2, 26+4, 26+4, 6+2);
     }
     
@@ -122,7 +122,7 @@ void draw() {
     
     if(bass[i]==1) {
       
-      fill(200);
+      fill(200, 200, 200);
       if(position==i) {
         sound_bass.stop();
         sound_bass.play();
